@@ -1,0 +1,2 @@
+FLASK_APP=rockps.py
+FLASK_ENV=development
