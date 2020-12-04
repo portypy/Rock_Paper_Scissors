@@ -30,3 +30,11 @@ class TestGame(unittest.TestCase):
     def test_scissors_vs_paper_wins_scissors(self):
         self.assertEqual("scissors wins over paper",self.game.game(self.player_s.choice,self.player_p.choice))
 
+    def test_draw_r(self):
+        self.assertEqual(None,self.game.game(self.player_r.choice,self.player_r.choice))
+
+    def test_draw_p(self):
+        self.assertEqual(None,self.game.game(self.player_p.choice,self.player_p.choice))
+
+    def test_draw_s(self):
+        self.assertEqual(None,self.game.game(self.player_s.choice,self.player_s.choice))
