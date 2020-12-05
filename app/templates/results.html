@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+  
+    {{request.form['name']}}
+    <a>plays</a>
+    {{request.form['choice7']}}
+    <a>computer plays</a>
+    {{  random_str  }}
+   <br>
+    {{  result }}
+
+    {%endblock%}   

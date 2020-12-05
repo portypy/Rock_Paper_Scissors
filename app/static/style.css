@@ -1,21 +1,19 @@
-body {
-    background-color: #ebebdb;
-   
+body{
+    background-color: #98980c;
 }
 body > header {
+    background-color: #e2a219;
     display: flex;
     justify-content: center;
 
 }
 body > main > section
 {
-    grid-area: "section";
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 10em;
-    
-
+    padding: 3em;
 }
 #menu > ul
 {
@@ -26,24 +24,32 @@ body > main > section
 }
 #menu > ul > li > a
 {
-    color: rgb(7, 14, 82);
+    color: rgb(10, 41, 5);
 }   
 body > main
 { 
     
     display: grid; 
     align-items: flex-start;
-    grid-template-areas: "section menu";
     grid-template-columns: auto 1fr;
-
   }
 
 body > main > section > div {
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: 10px;
 }
 #result{
     font-size: 2.5em;
     font-style: italic;
     font-weight: bold;
+}
+#imput > div > div{
+    display: flex;
+    flex-direction: column; 
+    
+}
+#image  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

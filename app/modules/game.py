@@ -1,3 +1,6 @@
+import random
+import pdb
+
 class Game():
     
 
@@ -14,3 +17,5 @@ class Game():
             return "Rock wins over scissors"
         else:
             return "Scissors wins over paper"
+
+    

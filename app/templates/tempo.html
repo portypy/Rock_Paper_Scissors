@@ -1,31 +1,25 @@
  {% extends "base.html" %}
-
-    {% block content %}
-        
-            <div>
-                <form class="form-inline" action="/add-event" method="post"></form>
-                <label for="choice">Choose one:</label>
-                <select name="choice" id="choice">
-                <option value="Rock">Rock</option>
-                <option value="Scissors">Scissors</option>
-                <option value="Paper">Paper</option>
-                </select>
-            </div>
+    {% block content %}       
             
-            <div id =image >
-                <img src=https://wlxaj1j3fea9rr7r20slpixw-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/Rock-Paper-Scissors.jpg alt="Rules off this game" width="300">
-            </div>
-            <div>
-                <label for="choice7">Choose one :</label>
-                <select name="choice7" id="choice7">
-                <option value="Rock1">Rock</option>
-                <option value="Scissors1">Scissors</option>
-                <option value="Paper1">Paper</option>
-                </select>
-            </div>
-            <div>
-                <br>
-                <input type="submit" value="Play">
-            </div>
             
+                <img  id =image src=https://wlxaj1j3fea9rr7r20slpixw-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/Rock-Paper-Scissors.jpg alt="Rules off this game" width="300">
+            
+            <div id =imput>
+                <form action="/play" method="post">
+                    <div class="dropdown-content">
+                        <div><label for="choice7">Choose one :</label>
+                        <select name="choice7" id="choice7">
+                            <option value="rock">Rock</option>
+                            <option value="scissors">Scissors</option>
+                            <option value="paper">Paper</option>
+                        </select>
+                        </div>
+                        <div>
+                            <label for="name">Your name :</label>
+                            <input type="text" name="name" id="name">
+                            <input type="submit" value="play">
+                        </div>                    
+                    </div> 
+                </form>
+                      
      {%endblock%}   
