@@ -1,8 +1,9 @@
  {% extends "base.html" %}
 
     {% block content %}
-        <main>
+        
             <div>
+                <form class="form-inline" action="/add-event" method="post"></form>
                 <label for="choice">Choose one:</label>
                 <select name="choice" id="choice">
                 <option value="Rock">Rock</option>
@@ -22,5 +23,9 @@
                 <option value="Paper1">Paper</option>
                 </select>
             </div>
-        </main>    
+            <div>
+                <br>
+                <input type="submit" value="Play">
+            </div>
+            
      {%endblock%}   

@@ -1,20 +1,44 @@
-body 
-{
-background-color: #ebebdb;
-display: flex;
-flex-direction: column;
-align-items: center;
+body {
+    background-color: #ebebdb;
+   
 }
-body > main
+body > header {
+    display: flex;
+    justify-content: center;
+
+}
+body > main > section
 {
-    
+    grid-area: "section";
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: space-between;
+    margin-right: 10em;
+    
+
+}
+#menu > ul
+{
+    list-style-type: none;
+}
+#menu > ul > li {
+    padding-top: 20px;
+}
+#menu > ul > li > a
+{
+    color: rgb(7, 14, 82);
+}   
+body > main
+{ 
+    
+    display: grid; 
+    align-items: flex-start;
+    grid-template-areas: "section menu";
+    grid-template-columns: auto 1fr;
+
   }
 
-body > main >div {
+body > main > section > div {
     font-size: 1.5em;
     margin: 10px;
 }

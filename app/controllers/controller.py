@@ -5,7 +5,7 @@ from app.modules.game import Game
 
 @app.route('/')
 def index():
-     return render_template('tempo.html', title='Home')
+     return render_template('welcome.html', title='Home')
 
 @app.route('/<choice1>/<choice2>')
 def check(choice1,choice2):
