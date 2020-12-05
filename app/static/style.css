@@ -1,0 +1,16 @@
+body
+{
+    background-color: #ebebdb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+body > div {
+    font-size: 1.5em;
+}
+#result{
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: bold;
+}
