@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
-</head>
-<body>
+{% extends "base.html" %}
     
-        <h1>Rock Paper Scissors World Championship </h1>
-        <section id = section></section>
+    {% block content %}   
+        <main>
             <div>Player one plays {{choice1}}</div>
             <div><==></div>   
             <div>Player two plays {{choice2}}</div> 
@@ -20,6 +12,6 @@
                 <img src=https://wlxaj1j3fea9rr7r20slpixw-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/Rock-Paper-Scissors.jpg alt="Rules off this game" width="300">
             </div>
             <div id = result>!!!{{  result }}!!!</div>
-        </section>
-</body>
-</html>
+
+        </main>
+    {% endblock %}

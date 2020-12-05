@@ -5,12 +5,12 @@ class Game():
         if player1_choice == player2_choice:
             return "Draw"
         elif player1_choice == "rock" and player2_choice == "paper":
-            return "paper wins over rock"
+            return "Paper wins over rock"
         elif player2_choice == "rock" and player1_choice == "paper":
-            return "paper wins over rock"
+            return "Paper wins over rock"
         elif player1_choice == "rock" and player2_choice == "scissors":
-            return "rock wins over scissors"
+            return "Rock wins over scissors"
         elif player2_choice == "rock" and player1_choice == "scissors":
-            return "rock wins over scissors"
+            return "Rock wins over scissors"
         else:
-            return "scissors wins over paper"
+            return "Scissors wins over paper"
