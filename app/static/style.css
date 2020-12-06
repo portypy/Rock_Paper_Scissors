@@ -27,8 +27,7 @@ body > main > section
     color: rgb(10, 41, 5);
 }   
 body > main
-{ 
-    
+{
     display: grid; 
     align-items: flex-start;
     grid-template-columns: auto 1fr;
@@ -36,7 +35,6 @@ body > main
 
 body > main > section > div {
     font-size: 1.3em;
-    margin: 10px;
 }
 #result{
     font-size: 2.5em;
@@ -52,4 +50,15 @@ body > main > section > div {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#output * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e2a219;
+    border-radius: 5em;
+    padding: 0.5em;
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: bold;
 }

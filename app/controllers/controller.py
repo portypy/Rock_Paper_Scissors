@@ -3,7 +3,6 @@ from app import app
 from app.modules.game import Game
 from app.modules.player import Player
 from app.modules import random_generator
-
 import pdb
 
 @app.route('/')
@@ -19,9 +18,15 @@ def check(choice1,choice2):
 @app.route('/play', methods =['POST', 'GET'] )
 def play():
      if request.method == 'POST':
+          name = request.form['name']
+          # tried to sent 'Player' if name form is empty
+          #this didnt work ???find how to???
+          #insted learned how to force user to fill name form
+          # if name is None:
+          #      name = "Player"
           game = Game()
           random_str = random_generator.str_generator()
           result = game.game(request.form['choice7'],random_str)
-          return render_template('results.html', result=result, random_str=random_str)
+          return render_template('results.html', result=result, random_str=random_str, name=name)
      else:
           return render_template("tempo.html")

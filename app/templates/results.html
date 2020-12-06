@@ -1,13 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-  
-    {{request.form['name']}}
-    <a>plays</a>
-    {{request.form['choice7']}}
-    <a>computer plays</a>
-    {{  random_str  }}
-   <br>
-    {{  result }}
-
+<output id=output>
+    
+    <a>{{name}} plays {{request.form['choice7']}}</a>
+    <a>Computer plays {{  random_str  }}</a>
+    <a>!!!{{  result }}!!!</a>
+</output>
+<br>
+<section>
+    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F1990%2F12%2Fedward-scissorhands1.jpg&q=85" alt="edward scissorhands" height="200px">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHmFd2-3cTP0F8MkKZI47yOyN0x5xW0zbXtA&usqp=CAU" alt ="rocky balboa" height="200px">
+    <img src="https://media.npr.org/assets/artslife/movies/2010/04/paper-man/supertwo-e09f633ea02ba69204963bfd58dc38baf8089cf8-s800-c85.jpg" alt = "paper man" height="200px">
+</section>
     {%endblock%}   
